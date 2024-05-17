@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="col-6">
+      <tbody>
+        <tr *ngFor="let p of animes">
+        
+          <div class="card" style="width: 18rem;">
+            <img src="{{ p.poster }}" class="card-img-top" alt="{{ p.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ p.name }}</h5>
+                <p class="card-text">{{ p.rating }}</p> #No supe apendearle ⭐
+                <p class="card-text">{{ p.categories }}</p>
+            </div>
+          </div>
+        </tr>
+      </tbody>
+    <div class="container-fluid">
+      <p>La cantidad total de episodios es {{ totalEpisodes }} y el rating promedio es {{ averageRating }} </p>
+    </div>
+  </div>
+</div>
